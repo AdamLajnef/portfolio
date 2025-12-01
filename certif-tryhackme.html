@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>TryHackMe – Cybersécurité | Portfolio BTS SIO - Adam LAJNEF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: linear-gradient(135deg, #040b14, #1f3b57);
+      color: white;
+      padding: 25px 0;
+    }
+    header .navbar {
+      border-top: 1px solid rgba(255,255,255,0.2);
+      margin-top: 10px;
+    }
+    header h1 {
+      margin-bottom: 5px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    header p {
+      margin: 0;
+      font-size: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 35px 0;
+    }
+    .section-title h2 {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 3px;
+      background: #173b6c;
+      left: 20%;
+      bottom: -8px;
+    }
+    footer {
+      background: #040b14;
+      color: #aaa;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+    .badge-en-cours {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: #28a745;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .btn-main {
+      background-color: #173b6c;
+      color: #fff;
+      border: none;
+    }
+    .btn-main:hover {
+      background-color: #102747;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>TryHackMe – Initiation à la cybersécurité</h1>
+    <p>Portfolio BTS SIO – Adam LAJNEF</p>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#certifs">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projet">Projet pro</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Présentation générale -->
+  <section>
+    <div class="section-title">
+      <h2>Présentation</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mb-3">
+        <img src="img/certifs/tryhackme.png" alt="Logo TryHackMe" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-7">
+        <p>
+          En deuxième année de <strong>BTS SIO</strong>, j’ai suivi un parcours d’initiation
+          à la <strong>cybersécurité</strong> sur la plateforme <strong>TryHackMe</strong>.
+          Il s’agit d’un environnement d’apprentissage en ligne qui propose des labs guidés
+          et des scénarios concrets.
+        </p>
+        <p>
+          L’objectif est de mieux comprendre les menaces qui pèsent sur les systèmes
+          d’information et de commencer à utiliser des outils et des méthodes de base
+          en cybersécurité, dans un cadre encadré et pédagogique.
+        </p>
+        <p class="mb-1"><strong>Année :</strong> 2ᵉ année de BTS SIO</p>
+        <p class="mb-1">
+          <strong>Statut :</strong> <span class="badge-en-cours">Parcours réalisé et synthèse disponible</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thématiques -->
+  <section>
+    <div class="section-title">
+      <h2>Thématiques abordées</h2>
+    </div>
+    <p>
+      Les activités réalisées sur TryHackMe couvrent plusieurs notions de base, par exemple&nbsp;:
+    </p>
+    <ul>
+      <li>Compréhension du fonctionnement général d’un système et d’un réseau</li>
+      <li>Découverte d’outils utilisés en analyse de sécurité</li>
+      <li>Exploration de scénarios guidés pour identifier des failles simples</li>
+      <li>Lecture et interprétation des consignes d’un lab de cybersécurité</li>
+      <li>Sensibilisation aux bonnes pratiques de sécurisation</li>
+    </ul>
+    <p>
+      <strong>Mots-clés :</strong> cybersécurité, lab, réseau, système, vulnérabilité, bonnes pratiques.
+    </p>
+  </section>
+
+  <!-- Compétences -->
+  <section>
+    <div class="section-title">
+      <h2>Compétences développées</h2>
+    </div>
+    <ul>
+      <li>Identifier les grandes familles de menaces en environnement numérique.</li>
+      <li>Suivre une méthodologie guidée pour analyser une machine ou un service.</li>
+      <li>Utiliser des outils de base présents dans les labs (ligne de commande, analyse réseau…).</li>
+      <li>Relier la cybersécurité à l’administration des systèmes et des réseaux.</li>
+      <li>Adopter une approche rigoureuse et structurée face à un problème de sécurité.</li>
+    </ul>
+  </section>
+
+  <!-- Synthèse PDF -->
+  <section>
+    <div class="section-title">
+      <h2>Synthèse de la certification</h2>
+    </div>
+    <p>
+      J’ai rédigé une <strong>synthèse</strong> de mon parcours sur TryHackMe, qui reprend les
+      principaux types de labs réalisés, les notions importantes et ce que j’en retiens
+      pour la suite de ma formation en BTS SIO.
+    </p>
+    <p>
+      La synthèse est disponible au format PDF&nbsp;:
+    </p>
+    <a href="docs/TryHackMe_Adam.pdf" class="btn btn-main btn-sm" target="_blank">
+      Télécharger ma synthèse TryHackMe (PDF)
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 — Portfolio BTS SIO | Adam LAJNEF — Tous droits réservés
+</footer>
+
+</body>
+</html>
