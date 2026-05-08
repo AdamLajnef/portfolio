@@ -183,11 +183,44 @@ section {
   margin-top: 6px;
 }
 
+.card-highlight {
+  border-left: 4px solid var(--accent);
+}
+
+.mission-list {
+  columns: 2;
+  column-gap: 28px;
+}
+
+.mission-list li {
+  break-inside: avoid;
+}
+
 .info-band {
   background: var(--surface-soft);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 24px;
+}
+
+.timeline {
+  display: grid;
+  gap: 24px;
+  position: relative;
+}
+
+.timeline-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.timeline-meta {
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .skill-grid {
@@ -227,6 +260,16 @@ section {
 
 .realisation-card {
   border-left: 4px solid var(--accent);
+}
+
+.source-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.source-list li + li {
+  margin-top: 10px;
 }
 
 .btn-main {
@@ -344,6 +387,10 @@ section {
   .card-clean,
   .info-band {
     padding: 18px;
+  }
+
+  .mission-list {
+    columns: 1;
   }
 }
 
