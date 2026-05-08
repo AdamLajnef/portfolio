@@ -9,12 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="veille-page">
 
 <header class="site-header">
   <div class="container">
     <h1>Veille informatique</h1>
-    <p>Cybersécurité des PME et TPE face aux ransomwares</p>
+    <p>La cybersécurité des PME/TPE face aux ransomwares</p>
 
     <nav class="navbar navbar-dark portfolio-nav" aria-label="Navigation principale">
       <div class="container justify-content-center">
@@ -33,170 +33,164 @@
   </div>
 </header>
 
-<main class="container">
-  <section>
-    <div class="section-title">
-      <h2>Sujet de veille</h2>
+<main>
+  <section class="veille-hero">
+    <div class="container">
+      <div class="veille-hero-card">
+        <p class="eyebrow">Veille technologique - BTS SIO SISR</p>
+        <h2>Évolution des ransomwares et des solutions de cybersécurité de 2022 à 2026</h2>
+        <p>
+          Cette veille suit l’évolution des menaces qui touchent les PME/TPE et met en relation les
+          risques observés avec les compétences SISR : sauvegardes, VPN, pare-feu, Active Directory,
+          supervision, support utilisateur et sensibilisation.
+        </p>
+      </div>
     </div>
-    <div class="row g-4 align-items-start">
-      <div class="col-lg-8">
-        <p class="lead">
-          Sujet : <strong>la cybersécurité des PME et TPE face aux ransomwares</strong>.
+  </section>
+
+  <section class="veille-timeline-section">
+    <div class="container">
+      <div class="section-title veille-title">
+        <h2>Timeline de veille</h2>
+      </div>
+
+      <div class="veille-timeline" aria-label="Timeline de veille cybersécurité ransomware">
+        <article class="veille-event">
+          <div class="veille-date">2022</div>
+          <div class="veille-card">
+            <span class="veille-icon"><i class="bi bi-exclamation-triangle" aria-hidden="true"></i></span>
+            <h3>Explosion des ransomwares visant les PME</h3>
+            <p class="veille-summary">
+              Les PME deviennent des cibles prioritaires des ransomwares car elles disposent souvent
+              de moins de protections que les grandes entreprises.
+            </p>
+            <div class="veille-analysis">
+              <strong>Analyse personnelle :</strong>
+              les cyberattaques ne touchent plus uniquement les grandes sociétés. Les PME/TPE doivent
+              désormais sécuriser leurs sauvegardes, leurs réseaux et leurs accès utilisateurs.
+            </div>
+            <a class="btn btn-veille" href="https://arxiv.org/abs/2102.06249" target="_blank" rel="noopener">
+              Lire l’article
+              <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="veille-event">
+          <div class="veille-date">Février 2023</div>
+          <div class="veille-card">
+            <span class="veille-icon"><i class="bi bi-bug" aria-hidden="true"></i></span>
+            <h3>Les ransomwares deviennent plus sophistiqués</h3>
+            <p class="veille-summary">
+              Les cybercriminels développent des ransomwares capables d’éviter certaines détections
+              et d’augmenter les dégâts causés aux entreprises.
+            </p>
+            <div class="veille-analysis">
+              <strong>Analyse personnelle :</strong>
+              les attaques deviennent plus difficiles à détecter et montrent l’importance des solutions
+              EDR, de la supervision et des sauvegardes sécurisées.
+            </div>
+            <a class="btn btn-veille" href="https://arxiv.org/abs/2312.07641" target="_blank" rel="noopener">
+              Lire l’article
+              <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="veille-event">
+          <div class="veille-date">2024</div>
+          <div class="veille-card">
+            <span class="veille-icon"><i class="bi bi-shield-exclamation" aria-hidden="true"></i></span>
+            <h3>Hausse des cyberattaques contre les PME françaises</h3>
+            <p class="veille-summary">
+              L’ANSSI constate une augmentation importante des incidents de cybersécurité touchant les
+              entreprises françaises.
+            </p>
+            <div class="veille-analysis">
+              <strong>Analyse personnelle :</strong>
+              la cybersécurité devient un enjeu majeur pour les administrateurs systèmes et réseaux.
+              Les PME doivent renforcer leur sécurité réseau, leurs VPN et leurs pare-feu.
+            </div>
+            <a class="btn btn-veille" href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2024-mobilisation-et-vigilance-face-aux-attaquants/" target="_blank" rel="noopener">
+              Lire l’article
+              <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="veille-event">
+          <div class="veille-date">2025</div>
+          <div class="veille-card">
+            <span class="veille-icon"><i class="bi bi-building-lock" aria-hidden="true"></i></span>
+            <h3>Les PME fortement touchées par les ransomwares</h3>
+            <p class="veille-summary">
+              Selon plusieurs rapports, les PME représentent une grande partie des victimes de
+              cyber-extorsion et de ransomware.
+            </p>
+            <div class="veille-analysis">
+              <strong>Analyse personnelle :</strong>
+              les entreprises doivent mettre en place des sauvegardes, du MFA, des politiques de sécurité
+              et de la sensibilisation utilisateur.
+            </div>
+            <a class="btn btn-veille" href="https://digital-solutions.konicaminolta.fr/infrastructure-informatique/article-la-cybersecurite-des-pme-francaises-un-enjeu-existentiel/" target="_blank" rel="noopener">
+              Lire l’article
+              <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="veille-event">
+          <div class="veille-date">2026</div>
+          <div class="veille-card">
+            <span class="veille-icon"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></span>
+            <h3>Les cyberattaques continuent d’augmenter</h3>
+            <p class="veille-summary">
+              Les rapports récents montrent une hausse importante des incidents de cybersécurité
+              et des attaques automatisées.
+            </p>
+            <div class="veille-analysis">
+              <strong>Analyse personnelle :</strong>
+              les métiers SISR deviennent essentiels pour protéger les infrastructures réseaux,
+              serveurs et utilisateurs.
+            </div>
+            <a class="btn btn-veille" href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener">
+              Lire l’article
+              <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="veille-conclusion-section">
+    <div class="container">
+      <div class="veille-conclusion">
+        <div>
+          <p class="eyebrow">Conclusion personnelle</p>
+          <h2>Un sujet directement lié au métier d’administrateur systèmes et réseaux</h2>
+        </div>
+        <p>
+          La cybersécurité est devenue essentielle pour toutes les entreprises, y compris les PME et TPE.
+          Les ransomwares peuvent bloquer une activité complète, faire perdre des données et mettre en
+          difficulté une organisation qui ne dispose pas de sauvegardes ou de procédures adaptées.
         </p>
         <p>
-          Un ransomware, ou rançongiciel, est un logiciel malveillant qui bloque l’accès aux données
-          ou chiffre les fichiers d’une organisation, puis réclame une rançon. Les petites structures
-          sont particulièrement exposées, car elles disposent souvent de moyens humains et techniques
-          plus limités qu’une grande entreprise.
+          Le lien avec mon BTS SIO option SISR est direct : un administrateur systèmes et réseaux doit
+          sécuriser les accès, maintenir les serveurs, protéger les postes, superviser les services et
+          accompagner les utilisateurs dans les bonnes pratiques.
         </p>
         <p>
-          Ce sujet est important en BTS SIO SISR, car il relie directement l’administration des systèmes,
-          la sécurité réseau, les sauvegardes, les accès distants, le support utilisateur et la continuité
-          d’activité.
+          Mes stages chez XEFI Nantes Sud et à l’École des Beaux-Arts Nantes Saint-Nazaire m’ont permis
+          de comprendre l’importance des sauvegardes, des VPN, des pare-feu, d’Active Directory et de la
+          sécurité réseau dans un environnement professionnel.
         </p>
       </div>
-      <div class="col-lg-4">
-        <aside class="info-band">
-          <h3 class="h5">Pourquoi cette veille ?</h3>
-          <p class="mb-0">
-            Elle montre l’importance de sécuriser les infrastructures, de maintenir les services à jour
-            et de sensibiliser les utilisateurs aux risques quotidiens.
-          </p>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-title">
-      <h2>Risques pour les PME/TPE</h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-xl-3">
-        <article class="card-clean">
-          <span class="icon-badge"><i class="bi bi-lock" aria-hidden="true"></i></span>
-          <h3 class="h5">Ransomware</h3>
-          <p>Chiffrement des fichiers, blocage de l’activité et pression financière sur l’entreprise.</p>
-        </article>
-      </div>
-      <div class="col-md-6 col-xl-3">
-        <article class="card-clean">
-          <span class="icon-badge"><i class="bi bi-envelope-exclamation" aria-hidden="true"></i></span>
-          <h3 class="h5">Phishing</h3>
-          <p>Vol d’identifiants par e-mail frauduleux, fausse page de connexion ou pièce jointe malveillante.</p>
-        </article>
-      </div>
-      <div class="col-md-6 col-xl-3">
-        <article class="card-clean">
-          <span class="icon-badge"><i class="bi bi-database-exclamation" aria-hidden="true"></i></span>
-          <h3 class="h5">Vol de données</h3>
-          <p>Fuite de fichiers clients, documents internes ou informations confidentielles.</p>
-        </article>
-      </div>
-      <div class="col-md-6 col-xl-3">
-        <article class="card-clean">
-          <span class="icon-badge"><i class="bi bi-exclamation-triangle" aria-hidden="true"></i></span>
-          <h3 class="h5">Arrêt d’activité</h3>
-          <p>Indisponibilité des postes, serveurs, logiciels métiers, messagerie ou accès distants.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-title">
-      <h2>Moyens de protection</h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <article class="card-clean">
-          <h3 class="h5">Mesures techniques</h3>
-          <ul>
-            <li>Sauvegardes régulières, testées et isolées du réseau</li>
-            <li>Mises à jour des systèmes, logiciels et équipements réseau</li>
-            <li>Antivirus ou EDR sur les postes et serveurs</li>
-            <li>Pare-feu correctement configuré</li>
-            <li>VPN sécurisé pour les accès distants</li>
-            <li>MFA sur les comptes sensibles et les services exposés</li>
-          </ul>
-        </article>
-      </div>
-      <div class="col-lg-6">
-        <article class="card-clean">
-          <h3 class="h5">Mesures organisationnelles</h3>
-          <ul>
-            <li>Sensibilisation des utilisateurs au phishing et aux pièces jointes suspectes</li>
-            <li>Gestion rigoureuse des droits d’accès</li>
-            <li>Procédure de réaction en cas d’incident</li>
-            <li>Documentation des configurations et des sauvegardes</li>
-            <li>Suivi des alertes et vulnérabilités via des sources fiables</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-title">
-      <h2>Lien avec mes stages et compétences</h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <article class="card-clean">
-          <h3 class="h5">Lien avec XEFI Nantes Sud</h3>
-          <p>
-            XEFI accompagne des TPE et PME sur la maintenance informatique, la cybersécurité,
-            la sauvegarde, le cloud, le réseau et la téléphonie IP. Cette veille est donc directement
-            liée aux besoins rencontrés chez les clients : sécuriser les accès, maintenir les postes,
-            protéger les données et limiter les interruptions d’activité.
-          </p>
-        </article>
-      </div>
-      <div class="col-lg-6">
-        <article class="card-clean">
-          <h3 class="h5">Lien avec mes compétences SISR</h3>
-          <p>
-            Cette veille mobilise plusieurs compétences : Active Directory, sauvegarde, réseau,
-            VPN, pare-feu, supervision, support utilisateur, gestion des droits et sensibilisation.
-            Elle montre que la sécurité dépend autant de la technique que des usages quotidiens.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-title">
-      <h2>Sources de veille</h2>
-    </div>
-    <div class="card-clean">
-      <p>
-        Pour suivre ce sujet, je peux m’appuyer sur des sources institutionnelles et régulièrement
-        mises à jour.
-      </p>
-      <ul class="source-list">
-        <li>
-          <a href="https://www.cert.ssi.gouv.fr/?lang=fr_fr" target="_blank" rel="noopener">CERT-FR</a> :
-          alertes et avis de sécurité sur les vulnérabilités.
-        </li>
-        <li>
-          <a href="https://cyber.gouv.fr/publications/la-cybersecurite-pour-les-tpepme-en-treize-questions" target="_blank" rel="noopener">ANSSI - cybersécurité pour les TPE/PME</a> :
-          bonnes pratiques adaptées aux petites structures.
-        </li>
-        <li>
-          <a href="https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/entreprises/comment-proteger-entreprise-contre-rancongiciels" target="_blank" rel="noopener">Ma Sécurité - se protéger contre les rançongiciels</a> :
-          conseils de prévention pour les entreprises.
-        </li>
-        <li>
-          <a href="https://cyber.gouv.fr/les-regles-dor-de-la-sauvegarde/" target="_blank" rel="noopener">ANSSI - règles d’or de la sauvegarde</a> :
-          rappel de l’importance des sauvegardes fiables.
-        </li>
-      </ul>
     </div>
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer veille-footer">
   <div class="container">
     &copy; 2026 - Portfolio BTS SIO SISR | Adam LAJNEF - Tous droits réservés
   </div>
