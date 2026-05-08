@@ -2,162 +2,81 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Certifications | Portfolio BTS SIO - Adam LAJNEF</title>
+  <title>Certifications | Portfolio BTS SIO SISR - Adam LAJNEF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Style -->
-  <style>
-    body { background: #f5f5f5; font-family: Arial, sans-serif; }
-    header {
-      background: linear-gradient(135deg, #040b14, #1f3b57);
-      color: white;
-      padding: 40px 0 10px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.2rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    header p { margin: 0; font-size: 1.1rem; }
-    nav.navbar { border-top: 1px solid rgba(255,255,255,0.2); margin-top: 15px; }
-    section { padding: 40px 0; }
-
-    .section-title h2 {
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-    }
-    .section-title h2::after {
-      content: "";
-      position: absolute;
-      width: 60%;
-      height: 3px;
-      background: #173b6c;
-      left: 20%;
-      bottom: -8px;
-    }
-
-    .certif-card {
-      background: white;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      padding: 20px;
-      height: 100%;
-    }
-
-    .certif-card img {
-      max-height: 120px;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
-
-    .btn-main {
-      background-color: #173b6c;
-      color: white;
-      border: none;
-    }
-
-    .btn-main:hover {
-      background-color: #0e2442;
-      color: white;
-    }
-
-    footer {
-      background: #040b14;
-      color: #aaa;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.85rem;
-      margin-top: 40px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <h1>Certifications</h1>
-  <p>Formations complémentaires et attestations obtenues</p>
+<header class="site-header">
+  <div class="container">
+    <h1>Certifications</h1>
+    <p>Formations complémentaires et apprentissage personnel</p>
 
-  <nav class="navbar navbar-expand-sm navbar-dark">
-    <div class="container justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
-        <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
-        <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
-        <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="certifications.html">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link" href="projet-pro.html">Projet pro</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar navbar-dark portfolio-nav" aria-label="Navigation principale">
+      <div class="container justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="Profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
+          <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#realisations">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="projet-pro.html">Projet pro</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <main class="container">
-
-  <section id="certifs">
+  <section>
     <div class="section-title">
-      <h2>Mes certifications 📜</h2>
+      <h2>Mes certifications</h2>
     </div>
-
-    <p>
-      Voici les différentes certifications que j’ai suivies dans le cadre de ma formation et de mon
-      apprentissage personnel. Chaque certification possède une page dédiée lorsque c’est pertinent.
+    <p class="section-intro">
+      Cette section présente les certifications et parcours suivis pour renforcer mes compétences
+      en systèmes, réseaux et cybersécurité.
     </p>
 
-    <div class="row mt-4">
-
-      <!-- TryHackMe -->
-      <div class="col-md-6 mb-4">
-        <div class="certif-card">
-          <h5>TryHackMe — Initiation à la cybersécurité</h5>
-          <p class="text-muted"><em>2025 — Parcours d’introduction</em></p>
-
-          <img src="img/certifs/tryhackme.png" alt="Logo TryHackMe">
-
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <article class="card-clean">
+          <span class="icon-badge"><i class="bi bi-shield-lock" aria-hidden="true"></i></span>
+          <h3>TryHackMe - initiation à la cybersécurité</h3>
+          <p class="text-muted"><em>Parcours d’introduction, synthèse disponible</em></p>
           <p>
-            Certification d’introduction à la <strong>cybersécurité</strong>.  
-            Elle couvre les bases : menaces, OSINT, réseau, analyse, Shell, exploitation simple,
-            découverte des outils et bonnes pratiques de sécurité.
+            Parcours guidé pour découvrir les notions de base de la cybersécurité : menaces,
+            réseau, systèmes, analyse, bonnes pratiques et premiers outils de sécurité.
           </p>
-
-          <a href="certif-tryhackme.html" class="btn btn-main btn-sm mt-2">
-            Voir la certification
-          </a>
-        </div>
+          <a href="certif-tryhackme.html" class="btn btn-main btn-sm">Voir la certification</a>
+        </article>
       </div>
 
-      <!-- Autres certifications à venir -->
-      <div class="col-md-6 mb-4">
-        <div class="certif-card">
-          <h5>Autres certifications (à venir)</h5>
+      <div class="col-lg-6">
+        <article class="card-clean">
+          <span class="icon-badge"><i class="bi bi-plus-circle" aria-hidden="true"></i></span>
+          <h3>Autres certifications</h3>
           <p class="text-muted"><em>Ajout progressif</em></p>
-
           <p>
-            Cette section sera complétée au fur et à mesure de l’obtention de nouvelles
-            certifications dans le domaine des réseaux, systèmes ou cybersécurité.
+            Les prochaines certifications liées aux réseaux, aux systèmes ou à la cybersécurité
+            seront ajoutées à cette page avec une synthèse claire des compétences travaillées.
           </p>
-
-        </div>
+        </article>
       </div>
-
     </div>
-
   </section>
-
 </main>
 
-<footer>
-  &copy; 2025 — Portfolio BTS SIO | Adam LAJNEF — Tous droits réservés
+<footer class="footer">
+  <div class="container">
+    &copy; 2026 - Portfolio BTS SIO SISR | Adam LAJNEF - Tous droits réservés
+  </div>
 </footer>
 
 </body>

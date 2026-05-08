@@ -2,155 +2,104 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Stages | Portfolio BTS SIO - Adam LAJNEF</title>
+  <title>Stages | Portfolio BTS SIO SISR - Adam LAJNEF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Style -->
-  <style>
-    body { background: #f5f5f5; font-family: Arial, sans-serif; }
-    header {
-      background: linear-gradient(135deg, #040b14, #1f3b57);
-      color: white;
-      padding: 40px 0 10px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.2rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    header p { margin: 0; font-size: 1.1rem; }
-    nav.navbar { border-top: 1px solid rgba(255,255,255,0.2); margin-top: 15px; }
-    section { padding: 40px 0; }
-    .section-title h2 {
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-    }
-    .section-title h2::after {
-      content: "";
-      position: absolute;
-      width: 60%;
-      height: 3px;
-      background: #173b6c;
-      left: 20%;
-      bottom: -8px;
-    }
-    .card-stage {
-      background: white;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      padding: 20px;
-      height: 100%;
-    }
-    footer {
-      background: #040b14;
-      color: #aaa;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.85rem;
-      margin-top: 40px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <h1>Stages</h1>
-  <p>Expériences professionnelles</p>
+<header class="site-header">
+  <div class="container">
+    <h1>Stages</h1>
+    <p>Expériences professionnelles en environnement informatique</p>
 
-  <nav class="navbar navbar-expand-sm navbar-dark">
-    <div class="container justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
-        <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="stages.html">Stages</a></li>
-        <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
-        <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link" href="projet-pro.html">Projet pro</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar navbar-dark portfolio-nav" aria-label="Navigation principale">
+      <div class="container justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="Profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="stages.html">Stages</a></li>
+          <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#realisations">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="projet-pro.html">Projet pro</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <main class="container">
-
-  <section id="stages">
+  <section>
     <div class="section-title">
-      <h2>Mes stages 🧑‍💻</h2>
+      <h2>Mes stages</h2>
     </div>
 
-    <div class="row">
-
-      <!-- Stage 1ère année -->
-      <div class="col-md-6 mb-4">
-        <div class="card-stage">
-          <h4>Stage 1ʳᵉ année — Assistant Administrateur Réseaux</h4>
-          <p class="text-muted"><em>Mai – Juin 2025 — École des Beaux-Arts de Nantes Saint-Nazaire</em></p>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <article class="card-clean">
+          <span class="icon-badge"><i class="bi bi-pc-display-horizontal" aria-hidden="true"></i></span>
+          <h3>Stage de première année - Assistant administrateur réseaux</h3>
+          <p class="text-muted"><em>Mai - juin 2025, École des Beaux-Arts de Nantes Saint-Nazaire</em></p>
 
           <p>
-            Durant ce stage, j’ai intégré l’équipe informatique et participé à un projet majeur
-            de migration <strong>Windows 10 → Windows 11</strong>. J’ai découvert des outils
-            professionnels d’administration et de déploiement.
+            Durant ce stage, j’ai intégré l’équipe informatique et participé à un projet de migration
+            de postes Windows 10 vers Windows 11. Cette expérience m’a permis de découvrir des outils
+            professionnels d’administration, d’inventaire et de déploiement.
           </p>
 
-          <h5 class="mt-3">Missions réalisées :</h5>
+          <h4 class="h6 mt-3">Missions réalisées</h4>
           <ul>
             <li>Audit des postes pour vérifier leur compatibilité avec Windows 11</li>
-            <li>Création et exécution de <strong>scripts PowerShell</strong></li>
-            <li>Utilisation de <strong>MDT</strong>, <strong>WAPT</strong>, <strong>OCS / GLPI</strong></li>
-            <li>Préparation, configuration et installation des nouveaux postes</li>
+            <li>Création et exécution de scripts PowerShell</li>
+            <li>Utilisation de MDT, WAPT, OCS Inventory et GLPI</li>
+            <li>Préparation, configuration et installation de nouveaux postes</li>
           </ul>
 
-          <h5 class="mt-3">Compétences BTS SIO mobilisées :</h5>
+          <h4 class="h6 mt-3">Compétences BTS SIO mobilisées</h4>
           <ul>
             <li>Gérer le patrimoine informatique</li>
-            <li>Répondre aux incidents et demandes d’assistance</li>
+            <li>Répondre aux incidents et aux demandes d’assistance</li>
             <li>Mettre en œuvre des scripts d’automatisation</li>
-            <li>Sécuriser le système d’information</li>
+            <li>Participer à la sécurisation du système d’information</li>
           </ul>
-        </div>
+        </article>
       </div>
 
-      <!-- Stage 2ème année -->
-      <div class="col-md-6 mb-4">
-        <div class="card-stage">
-          <h4>Stage 2ᵉ année — Administration systèmes & réseaux</h4>
-          <p class="text-muted"><em>Janvier – Février 2026 (prévision)</em></p>
+      <div class="col-lg-6">
+        <article class="card-clean">
+          <span class="icon-badge"><i class="bi bi-hdd-network" aria-hidden="true"></i></span>
+          <h3>Stage de deuxième année - Administration systèmes et réseaux</h3>
+          <p class="text-muted"><em>Janvier - février 2026, contenu à compléter</em></p>
 
           <p>
-            Mon prochain stage sera axé sur l’<strong>administration système</strong>,
-            l’<strong>exploitation réseau</strong> et la <strong>sécurisation des services</strong>.
+            Ce stage est orienté vers l’administration système, l’exploitation réseau et la sécurisation
+            des services. Les missions précises et les réalisations associées pourront être ajoutées
+            après validation et mise en forme de la documentation de stage.
           </p>
 
-          <h5 class="mt-3">Objectifs :</h5>
+          <h4 class="h6 mt-3">Objectifs professionnels</h4>
           <ul>
-            <li>Renforcer mes compétences en administration Windows / Linux</li>
-            <li>Participer à l’exploitation du SI</li>
-            <li>Mettre en œuvre des mesures de sécurité</li>
-            <li>Gagner en autonomie sur un environnement de production</li>
+            <li>Renforcer mes compétences en administration Windows Server et Linux</li>
+            <li>Participer à l’exploitation d’un système d’information</li>
+            <li>Mettre en œuvre des mesures de sécurisation</li>
+            <li>Gagner en autonomie sur un environnement professionnel</li>
           </ul>
-
-          <p class="mt-3"><em>Les réalisations seront ajoutées au fur et à mesure du stage.</em></p>
-        </div>
+        </article>
       </div>
-
     </div>
   </section>
-
 </main>
 
-<footer>
-  &copy; 2025 — Portfolio BTS SIO | Adam LAJNEF — Tous droits réservés
+<footer class="footer">
+  <div class="container">
+    &copy; 2026 - Portfolio BTS SIO SISR | Adam LAJNEF - Tous droits réservés
+  </div>
 </footer>
 
 </body>

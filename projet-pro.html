@@ -2,144 +2,100 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Projet professionnel | Portfolio BTS SIO - Adam LAJNEF</title>
+  <title>Projet professionnel | Portfolio BTS SIO SISR - Adam LAJNEF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Style -->
-  <style>
-    body { background: #f5f5f5; font-family: Arial, sans-serif; }
-    header {
-      background: linear-gradient(135deg, #040b14, #1f3b57);
-      color: white;
-      padding: 40px 0 10px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.2rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    header p { margin: 0; font-size: 1.1rem; }
-    nav.navbar { border-top: 1px solid rgba(255,255,255,0.2); margin-top: 15px; }
-    section { padding: 40px 0; }
-
-    .section-title h2 {
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-    }
-    .section-title h2::after {
-      content: "";
-      position: absolute;
-      width: 60%;
-      height: 3px;
-      background: #173b6c;
-      left: 20%;
-      bottom: -8px;
-    }
-
-    .project-box {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 25px;
-    }
-
-    footer {
-      background: #040b14;
-      color: #aaa;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.85rem;
-      margin-top: 40px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <h1>Projet professionnel</h1>
-  <p>Objectifs, ambitions et orientation</p>
+<header class="site-header">
+  <div class="container">
+    <h1>Projet professionnel</h1>
+    <p>Objectifs, orientation et poursuite d’études</p>
 
-  <nav class="navbar navbar-expand-sm navbar-dark">
-    <div class="container justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
-        <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
-        <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
-        <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
-        <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="projet-pro.html">Projet pro</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar navbar-dark portfolio-nav" aria-label="Navigation principale">
+      <div class="container justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="Profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
+          <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#realisations">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="projet-pro.html">Projet pro</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <main class="container">
-
-  <section id="projet">
+  <section>
     <div class="section-title">
-      <h2>Mon projet professionnel 🏢</h2>
+      <h2>Mon projet professionnel</h2>
     </div>
 
-    <div class="project-box">
+    <div class="card-clean">
+      <p>
+        Mon objectif est de devenir <strong>administrateur systèmes et réseaux</strong> ou
+        <strong>technicien infrastructures</strong>. J’aime intervenir sur l’infrastructure,
+        comprendre le fonctionnement d’un système d’information, sécuriser les services et résoudre
+        des problèmes techniques de manière structurée.
+      </p>
 
       <p>
-        Mon objectif principal est de devenir <strong>administrateur systèmes et réseaux</strong>.
-        J’aime intervenir sur l’infrastructure, comprendre le fonctionnement d’un système complet,
-        optimiser, sécuriser et résoudre des problèmes techniques complexes.
+        Je souhaite travailler dans un environnement où la disponibilité, la sécurité et la qualité
+        de service sont essentielles. L’administration systèmes et réseaux me permet d’être au cœur
+        du fonctionnement informatique d’une organisation.
       </p>
 
-      <p>
-        J’apprécie particulièrement les environnements où la sécurité, la disponibilité des services
-        et l’efficacité opérationnelle jouent un rôle essentiel. L’administration réseau et système
-        me permet d’être au cœur du fonctionnement de toute organisation.
-      </p>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4">
+          <div class="info-band h-100">
+            <h3 class="h5">Court terme</h3>
+            <ul class="mb-0">
+              <li>Valider mon BTS SIO option SISR</li>
+              <li>Consolider mes bases Windows, Linux et réseau</li>
+              <li>Valoriser mes réalisations E5</li>
+            </ul>
+          </div>
+        </div>
 
-      <h4 class="mt-4">🎯 Objectifs à court terme</h4>
-      <ul>
-        <li>Valider mon <strong>BTS SIO option SISR</strong> avec un bon dossier</li>
-        <li>Développer des compétences solides en Linux, Windows Server, réseaux et cybersécurité</li>
-        <li>Acquérir de l’expérience en stage sur un environnement professionnel réel</li>
-        <li>Poursuivre l’apprentissage sur des plateformes comme TryHackMe</li>
-      </ul>
+        <div class="col-lg-4">
+          <div class="info-band h-100">
+            <h3 class="h5">Moyen terme</h3>
+            <ul class="mb-0">
+              <li>Poursuivre en licence professionnelle ou bachelor</li>
+              <li>Privilégier une formation en alternance</li>
+              <li>Participer à des projets d’infrastructure</li>
+            </ul>
+          </div>
+        </div>
 
-      <h4 class="mt-4">🎯 Objectifs à moyen terme</h4>
-      <ul>
-        <li>Poursuivre en <strong>alternance</strong> : licence professionnelle ou bachelor spécialisé</li>
-        <li>Me professionnaliser davantage en participant à des projets d’infrastructure</li>
-        <li>Renforcer mes compétences en sécurité informatique</li>
-      </ul>
-
-      <h4 class="mt-4">🎯 Objectifs à long terme</h4>
-      <ul>
-        <li>Évoluer vers un poste d’<strong>administrateur systèmes & réseaux confirmé</strong></li>
-        <li>Me spécialiser en <strong>cybersécurité</strong> ou en <strong>cloud computing</strong></li>
-        <li>Éventuellement devenir <strong>ingénieur systèmes / cybersécurité</strong></li>
-      </ul>
-
-      <p class="mt-4">
-        Je souhaite travailler dans un environnement technique où je peux apprendre, progresser,
-        me dépasser, et contribuer à la stabilité et la sécurité du système d’information.
-      </p>
-
+        <div class="col-lg-4">
+          <div class="info-band h-100">
+            <h3 class="h5">Long terme</h3>
+            <ul class="mb-0">
+              <li>Évoluer vers un poste confirmé en systèmes et réseaux</li>
+              <li>Renforcer mes compétences en cybersécurité</li>
+              <li>Gagner en autonomie sur des environnements critiques</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
   </section>
-
 </main>
 
-<footer>
-  &copy; 2025 — Portfolio BTS SIO | Adam LAJNEF — Tous droits réservés
+<footer class="footer">
+  <div class="container">
+    &copy; 2026 - Portfolio BTS SIO SISR | Adam LAJNEF - Tous droits réservés
+  </div>
 </footer>
 
 </body>
