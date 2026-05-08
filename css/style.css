@@ -223,6 +223,67 @@ section {
   margin-bottom: 10px;
 }
 
+.proof-gallery {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.proof-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(18, 53, 91, 0.07);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.proof-card:hover,
+.proof-card:focus-within {
+  border-color: #b9d5ed;
+  box-shadow: 0 18px 40px rgba(18, 53, 91, 0.14);
+  transform: translateY(-4px);
+}
+
+.proof-media {
+  align-items: center;
+  background: linear-gradient(180deg, #f7fbff, #edf3f9);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  min-height: 190px;
+  padding: 12px;
+}
+
+.proof-media img {
+  aspect-ratio: 16 / 10;
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.proof-body {
+  padding: 18px;
+}
+
+.proof-body h4 {
+  color: var(--primary-dark);
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.proof-body p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
 .skill-grid {
   display: grid;
   gap: 12px;
@@ -387,6 +448,14 @@ section {
   .card-clean,
   .info-band {
     padding: 18px;
+  }
+
+  .proof-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-media {
+    min-height: 150px;
   }
 
   .mission-list {
