@@ -9,12 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="rp-page">
 
 <header class="site-header">
   <div class="container">
-    <h1>Réalisations</h1>
-    <p>Situations professionnelles liées à l’option SISR</p>
+    <h1>Réalisations professionnelles</h1>
+    <p>Windows Server, réseau et supervision</p>
 
     <nav class="navbar navbar-dark portfolio-nav" aria-label="Navigation principale">
       <div class="container justify-content-center">
@@ -34,149 +34,254 @@
   </div>
 </header>
 
-<main class="container">
-  <section>
-    <div class="section-title">
-      <h2>Réalisations professionnelles</h2>
+<main>
+  <section class="rp-hero">
+    <div class="container">
+      <div class="rp-hero-card">
+        <p class="eyebrow">BTS SIO option SISR</p>
+        <h2>Des réalisations centrées sur les systèmes, le réseau et la supervision</h2>
+        <p>
+          Cette page distingue clairement l'infrastructure de base utilisée pour les travaux pratiques
+          et les réalisations professionnelles que j'ai personnellement configurées. L'objectif est de
+          montrer mes compétences SISR dans un environnement proche d'une infrastructure d'entreprise.
+        </p>
+        <div class="rp-anchor-list" aria-label="Accès rapide aux sections">
+          <a href="#infrastructure-base"><i class="bi bi-hdd-network" aria-hidden="true"></i> Infrastructure de base</a>
+          <a href="#rp-windows"><i class="bi bi-windows" aria-hidden="true"></i> RP Windows Server</a>
+          <a href="#rp-zabbix"><i class="bi bi-activity" aria-hidden="true"></i> RP Supervision Zabbix</a>
+        </div>
+      </div>
     </div>
-    <p class="section-intro">
-      Ces réalisations mettent en évidence des compétences attendues en BTS SIO option SISR :
-      administration, déploiement, supervision, support, réseau et sécurité.
-    </p>
+  </section>
 
-    <div class="row g-4">
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
-          <h3 class="h5">Mise en place d’un domaine Active Directory</h3>
+  <section class="rp-section" id="infrastructure-base" aria-labelledby="infrastructure-title">
+    <div class="container">
+      <div class="rp-section-heading">
+        <span class="rp-step">01</span>
+        <div>
+          <p class="eyebrow">Environnement de départ</p>
+          <h2 id="infrastructure-title">Infrastructure de base</h2>
           <p>
-            Installation d’un contrôleur de domaine, organisation des utilisateurs, groupes et unités
-            d’organisation, puis intégration de postes clients au domaine.
+            Cette infrastructure virtualisée sert de socle commun aux différentes réalisations
+            professionnelles. Elle permet de tester l'administration Windows Server, les services réseau,
+            la supervision et l'inventaire dans un environnement structuré.
           </p>
-          <div class="tag-list">
-            <span class="tag">Windows Server</span>
-            <span class="tag">AD DS</span>
-            <span class="tag">GPO</span>
+        </div>
+      </div>
+
+      <div class="rp-foundation-grid">
+        <article class="rp-diagram-card">
+          <h3>Schéma simplifié de l'environnement</h3>
+          <div class="rp-flow" aria-label="Schéma de l'infrastructure de base">
+            <div class="rp-flow-node">
+              <i class="bi bi-pc-display" aria-hidden="true"></i>
+              <span>Clients Windows et Linux</span>
+            </div>
+            <div class="rp-flow-arrow" aria-hidden="true"></div>
+            <div class="rp-flow-node">
+              <i class="bi bi-diagram-3" aria-hidden="true"></i>
+              <span>VLAN, routeurs et switchs</span>
+            </div>
+            <div class="rp-flow-arrow" aria-hidden="true"></div>
+            <div class="rp-flow-node">
+              <i class="bi bi-server" aria-hidden="true"></i>
+              <span>Services Windows Server, GLPI et Zabbix</span>
+            </div>
           </div>
+        </article>
+
+        <article class="rp-note-card">
+          <h3>Rôle de cette base</h3>
+          <p>
+            Le jury peut ainsi identifier ce qui constitue l'environnement technique initial, puis
+            distinguer les ajouts réalisés dans les parties Windows Server et supervision Zabbix.
+          </p>
         </article>
       </div>
 
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-hdd-stack" aria-hidden="true"></i></span>
-          <h3 class="h5">Redondance AD/DNS/DHCP</h3>
-          <p>
-            Ajout d’un second serveur pour améliorer la disponibilité de l’annuaire, de la résolution DNS
-            et de l’attribution d’adresses IP.
-          </p>
-          <div class="tag-list">
-            <span class="tag">Disponibilité</span>
-            <span class="tag">DNS</span>
-            <span class="tag">DHCP</span>
-          </div>
+      <div class="rp-tech-grid" aria-label="Composants de l'infrastructure">
+        <article class="rp-tech-card">
+          <i class="bi bi-boxes" aria-hidden="true"></i>
+          <span>Infrastructure virtualisée sous VMware</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-diagram-3" aria-hidden="true"></i>
+          <span>Réseau avec VLAN</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-server" aria-hidden="true"></i>
+          <span>Serveurs Windows Server</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-person-vcard" aria-hidden="true"></i>
+          <span>Active Directory</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-globe2" aria-hidden="true"></i>
+          <span>DNS</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-broadcast-pin" aria-hidden="true"></i>
+          <span>DHCP</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-laptop" aria-hidden="true"></i>
+          <span>Clients Windows et Linux</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-router" aria-hidden="true"></i>
+          <span>Routeurs et switchs</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-clipboard-data" aria-hidden="true"></i>
+          <span>Serveur GLPI</span>
+        </article>
+        <article class="rp-tech-card">
+          <i class="bi bi-activity" aria-hidden="true"></i>
+          <span>Serveur Zabbix</span>
         </article>
       </div>
+    </div>
+  </section>
 
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-activity" aria-hidden="true"></i></span>
-          <h3 class="h5">Supervision avec Zabbix</h3>
+  <section class="rp-section rp-section-accent" id="rp-windows" aria-labelledby="windows-title">
+    <div class="container">
+      <div class="rp-section-heading">
+        <span class="rp-step">02</span>
+        <div>
+          <p class="eyebrow">Réalisation professionnelle</p>
+          <h2 id="windows-title">Administration Windows Server et gestion Active Directory</h2>
           <p>
-            Mise en place d’une supervision pour suivre l’état des serveurs et services, détecter les
-            incidents et faciliter le suivi de la disponibilité.
+            Cette réalisation présente les éléments que j'ai personnellement configurés pour centraliser
+            l'administration, organiser les utilisateurs et sécuriser l'environnement Windows.
           </p>
-          <div class="tag-list">
-            <span class="tag">Zabbix</span>
-            <span class="tag">Alertes</span>
-            <span class="tag">Supervision</span>
-          </div>
-        </article>
+        </div>
       </div>
 
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-clipboard-data" aria-hidden="true"></i></span>
-          <h3 class="h5">Inventaire avec GLPI</h3>
-          <p>
-            Centralisation des informations du parc, suivi des équipements et structuration des demandes
-            d’assistance grâce au ticketing.
-          </p>
-          <div class="tag-list">
-            <span class="tag">GLPI</span>
-            <span class="tag">Inventaire</span>
-            <span class="tag">Ticketing</span>
+      <div class="rp-content-grid">
+        <article class="rp-main-card">
+          <div class="rp-card-header">
+            <span class="rp-icon"><i class="bi bi-windows" aria-hidden="true"></i></span>
+            <div>
+              <p class="rp-kicker">Travaux réalisés</p>
+              <h3>Ce que j'ai mis en place</h3>
+            </div>
           </div>
+          <ul class="rp-check-list">
+            <li>Création et application de stratégies de groupe GPO.</li>
+            <li>Mise en place de profils itinérants pour les utilisateurs.</li>
+            <li>Gestion des utilisateurs et des groupes dans Active Directory.</li>
+            <li>Application de restrictions via GPO pour encadrer l'utilisation des postes.</li>
+            <li>Configuration des services DNS et DHCP.</li>
+            <li>Mise en place d'une redondance AD/DNS/DHCP.</li>
+            <li>Intégration des postes clients au domaine.</li>
+            <li>Tests et validation des stratégies avec la commande gpresult.</li>
+            <li>Organisation des unités d'organisation pour structurer l'annuaire.</li>
+            <li>Création d'un partage réseau dédié aux profils itinérants.</li>
+            <li>Sécurisation globale de l'environnement Windows Server.</li>
+          </ul>
         </article>
+
+        <div class="rp-side-stack">
+          <article class="rp-side-card">
+            <h3>Compétences mobilisées</h3>
+            <div class="rp-badge-list">
+              <span>Windows Server</span>
+              <span>Active Directory</span>
+              <span>GPO</span>
+              <span>DHCP</span>
+              <span>DNS</span>
+              <span>PowerShell</span>
+              <span>Administration système</span>
+              <span>Virtualisation VMware</span>
+            </div>
+          </article>
+
+          <article class="rp-side-card rp-result-card">
+            <h3>Résultats obtenus</h3>
+            <ul class="rp-result-list">
+              <li>Centralisation de l'administration.</li>
+              <li>Application automatique des stratégies.</li>
+              <li>Meilleure gestion des utilisateurs.</li>
+              <li>Environnement réseau plus fiable.</li>
+              <li>Redondance des services essentiels.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rp-section" id="rp-zabbix" aria-labelledby="zabbix-title">
+    <div class="container">
+      <div class="rp-section-heading">
+        <span class="rp-step">03</span>
+        <div>
+          <p class="eyebrow">Réalisation professionnelle</p>
+          <h2 id="zabbix-title">Supervision réseau et monitoring avec Zabbix</h2>
+          <p>
+            Cette réalisation montre l'ajout d'une solution de supervision complète afin de surveiller
+            les serveurs, les équipements réseau et l'état général de l'infrastructure.
+          </p>
+        </div>
       </div>
 
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-router" aria-hidden="true"></i></span>
-          <h3 class="h5">Configuration SNMP d’un switch</h3>
-          <p>
-            Activation et paramétrage de SNMP sur un équipement réseau afin de remonter des informations
-            utiles dans l’outil de supervision.
-          </p>
-          <div class="tag-list">
-            <span class="tag">SNMP</span>
-            <span class="tag">Switch</span>
-            <span class="tag">Réseau</span>
+      <div class="rp-content-grid">
+        <article class="rp-main-card">
+          <div class="rp-card-header">
+            <span class="rp-icon"><i class="bi bi-activity" aria-hidden="true"></i></span>
+            <div>
+              <p class="rp-kicker">Travaux réalisés</p>
+              <h3>Ce que j'ai ajouté à l'infrastructure</h3>
+            </div>
           </div>
+          <ul class="rp-check-list">
+            <li>Installation et configuration de Zabbix.</li>
+            <li>Ajout des serveurs et des équipements réseau dans la supervision.</li>
+            <li>Création d'une communauté SNMP.</li>
+            <li>Configuration de SNMP sur les switchs et les routeurs.</li>
+            <li>Activation des SNMP traps.</li>
+            <li>Configuration des interfaces VLAN.</li>
+            <li>Remontée des équipements dans Zabbix.</li>
+            <li>Supervision de l'état des machines et des équipements réseau.</li>
+            <li>Vérification de la remontée des informations.</li>
+            <li>Utilisation de GLPI et Zabbix dans un environnement SISR.</li>
+          </ul>
         </article>
-      </div>
 
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-windows" aria-hidden="true"></i></span>
-          <h3 class="h5">Audit de compatibilité Windows 11</h3>
-          <p>
-            Analyse automatisée du parc avec PowerShell, exploitation de résultats JSON et génération
-            d’un rapport de compatibilité.
-          </p>
-          <div class="tag-list">
-            <span class="tag">PowerShell</span>
-            <span class="tag">JSON</span>
-            <span class="tag">Active Directory</span>
-          </div>
-        </article>
-      </div>
+        <div class="rp-side-stack">
+          <article class="rp-side-card">
+            <h3>Compétences mobilisées</h3>
+            <div class="rp-badge-list">
+              <span>Supervision</span>
+              <span>Zabbix</span>
+              <span>SNMP</span>
+              <span>Réseau</span>
+              <span>VLAN</span>
+              <span>Switch Cisco</span>
+              <span>Routeurs</span>
+              <span>Linux</span>
+              <span>Monitoring</span>
+            </div>
+          </article>
 
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-cloud-arrow-down" aria-hidden="true"></i></span>
-          <h3 class="h5">Déploiement Windows avec WDS/MDT</h3>
-          <p>
-            Création d’un support de démarrage, capture d’une image Windows 11, utilisation de Sysprep
-            et injection de pilotes pour un déploiement multi-matériel.
-          </p>
-          <div class="tag-list">
-            <span class="tag">WDS</span>
-            <span class="tag">MDT</span>
-            <span class="tag">PXE</span>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-md-6 col-xl-4">
-        <article class="card-clean realisation-card">
-          <span class="icon-badge"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
-          <h3 class="h5">VPN et pare-feu en environnement client</h3>
-          <p>
-            Configuration de profils VPN, paramétrage LAN/WAN, création de règles de sécurité,
-            tests de connectivité et mise en place d’un VPN site à site.
-          </p>
-          <div class="tag-list">
-            <span class="tag">VPN</span>
-            <span class="tag">Pare-feu</span>
-            <span class="tag">Sophos</span>
-          </div>
-        </article>
+          <article class="rp-side-card rp-result-card">
+            <h3>Résultats obtenus</h3>
+            <ul class="rp-result-list">
+              <li>Supervision centralisée.</li>
+              <li>Surveillance des équipements réseau.</li>
+              <li>Détection plus rapide des problèmes.</li>
+              <li>Remontée automatique des informations.</li>
+              <li>Meilleure visibilité de l'infrastructure.</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer veille-footer">
   <div class="container">
     &copy; 2026 - Portfolio BTS SIO SISR | Adam LAJNEF - Tous droits réservés
   </div>
