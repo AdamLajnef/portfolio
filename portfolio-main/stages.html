@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Stages | Portfolio BTS SIO option SISR - Adam LAJNEF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>Stages</h1>
+    <p>Expériences professionnelles en systèmes, réseaux et support</p>
+
+    <nav class="navbar navbar-dark portfolio-nav" aria-label="Navigation principale">
+      <div class="container justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="Profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="stages.html">Stages</a></li>
+          <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations professionnelles</a></li>
+          <li class="nav-item"><a class="nav-link" href="veille.html">Veille informatique</a></li>
+          <li class="nav-item"><a class="nav-link" href="documents.html">Documents professionnels</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <div class="section-title">
+      <h2>Mes stages en BTS SIO option SISR</h2>
+    </div>
+    <p class="section-intro">
+      Ces deux expériences m’ont permis de travailler sur des environnements proches du terrain :
+      administration Windows, réseau, support utilisateur, déploiement, sécurité et relation client.
+    </p>
+
+    <div class="timeline">
+      <article class="timeline-item" id="beaux-arts">
+        <span class="icon-badge"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
+        <h3>Stage de 1re année - École des Beaux-Arts Nantes Saint-Nazaire</h3>
+        <p class="timeline-meta">Assistant administrateur réseaux | du 12 mai au 28 juin</p>
+
+        <p>
+          Ce stage m’a permis de découvrir l’organisation d’une infrastructure réseau en production
+          et de participer à un projet d’audit et de déploiement Windows 11.
+        </p>
+
+        <h4 class="h6 mt-4">Étude de l’infrastructure</h4>
+        <ul class="mission-list">
+          <li>Découverte de la topologie réseau de l’établissement</li>
+          <li>Étude de l’adressage IP, des routeurs et des commutateurs</li>
+          <li>Identification des pare-feu, serveurs et bornes Wi-Fi</li>
+          <li>Travail sur les services DHCP, DNS, Active Directory et VPN</li>
+        </ul>
+
+        <h4 class="h6 mt-4">Audit de compatibilité Windows 11</h4>
+        <ul class="mission-list">
+          <li>Audit de compatibilité Windows 11 du parc informatique</li>
+          <li>Utilisation d’un script PowerShell Microsoft pour analyser les postes</li>
+          <li>Exploitation de résultats au format JSON</li>
+          <li>Interprétation des codes : 0 compatible, 1 non compatible, -1 indéterminé, -2 erreur</li>
+          <li>Écriture des résultats dans l’attribut INFO des objets ordinateurs dans Active Directory</li>
+          <li>Automatisation de l’exécution avec une GPO</li>
+          <li>Génération d’un rapport d’audit des PC compatibles, non compatibles et indéterminés</li>
+        </ul>
+
+        <h4 class="h6 mt-4">Déploiement et automatisation</h4>
+        <ul class="mission-list">
+          <li>Travail sur WDS, MDT, PXE et les options DHCP 066 et 067</li>
+          <li>Création d’une clé USB bootable MDT</li>
+          <li>Capture d’une image Windows 11 personnalisée</li>
+          <li>Utilisation de Sysprep pour généraliser l’image</li>
+          <li>Injection de pilotes dans MDT</li>
+          <li>Tests de déploiement sur plusieurs modèles de matériel</li>
+          <li>Création d’un package WAPT pour déployer des raccourcis et outils bureautiques</li>
+        </ul>
+
+        <div class="tag-list">
+          <span class="tag">Active Directory</span>
+          <span class="tag">GPO</span>
+          <span class="tag">PowerShell</span>
+          <span class="tag">WDS / MDT</span>
+          <span class="tag">WAPT</span>
+          <span class="tag">Windows 11</span>
+        </div>
+
+        <section class="mt-5">
+          <div class="section-title">
+            <h2>Preuves techniques</h2>
+          </div>
+          <p class="section-intro">
+            Ces captures viendront illustrer les éléments techniques réalisés pendant le stage :
+            audit Windows 11, exploitation des résultats dans Active Directory et préparation du
+            déploiement avec WDS/MDT.
+          </p>
+
+          <div class="proof-gallery">
+            <article class="proof-card">
+              <div class="proof-media">
+                <img
+                  src="assets/stages/ecole-beaux-arts/criteres-compatibilite-windows11.png"
+                  alt="Critères matériels Windows 11"
+                  loading="lazy">
+              </div>
+              <div class="proof-body">
+                <h4>Critères matériels Windows 11</h4>
+                <p>Critères matériels Windows 11.</p>
+              </div>
+            </article>
+
+            <article class="proof-card">
+              <div class="proof-media">
+                <img
+                  src="assets/stages/ecole-beaux-arts/active-directory-attribut-info.png"
+                  alt="Attribut INFO dans Active Directory contenant les résultats du script PowerShell"
+                  loading="lazy">
+              </div>
+              <div class="proof-body">
+                <h4>Attribut INFO dans Active Directory</h4>
+                <p>Attribut INFO dans Active Directory contenant les résultats du script PowerShell.</p>
+              </div>
+            </article>
+
+            <article class="proof-card">
+              <div class="proof-media">
+                <img
+                  src="assets/stages/ecole-beaux-arts/rapport-audit-windows11.png"
+                  alt="Rapport d’audit automatique des postes compatibles Windows 11"
+                  loading="lazy">
+              </div>
+              <div class="proof-body">
+                <h4>Rapport d’audit Windows 11</h4>
+                <p>Rapport d’audit automatique des postes compatibles Windows 11.</p>
+              </div>
+            </article>
+
+            <article class="proof-card">
+              <div class="proof-media">
+                <img
+                  src="assets/stages/ecole-beaux-arts/options-dhcp-pxe-wds.png"
+                  alt="Configuration des options DHCP PXE pour WDS/MDT"
+                  loading="lazy">
+              </div>
+              <div class="proof-body">
+                <h4>Options DHCP PXE pour WDS/MDT</h4>
+                <p>Configuration des options DHCP PXE pour WDS/MDT.</p>
+              </div>
+            </article>
+
+            <article class="proof-card">
+              <div class="proof-media">
+                <img
+                  src="assets/stages/ecole-beaux-arts/verification-secure-boot-msinfo32.png"
+                  alt="Vérification du Secure Boot et des informations système avec msinfo32"
+                  loading="lazy">
+              </div>
+              <div class="proof-body">
+                <h4>Vérification Secure Boot avec msinfo32</h4>
+                <p>Vérification du Secure Boot et des informations système avec msinfo32.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <article class="timeline-item" id="xefi">
+        <span class="icon-badge"><i class="bi bi-shield-lock" aria-hidden="true"></i></span>
+        <h3>Stage de 2e année - XEFI Nantes Sud</h3>
+        <p class="timeline-meta">Stagiaire dans le service technique | Basse-Goulaine | 7 semaines</p>
+
+        <p>
+          Chez XEFI Nantes Sud, j’ai intégré un environnement orienté services aux entreprises.
+          Les missions concernaient la préparation de postes, le support client, l’atelier,
+          les interventions et la sécurité réseau.
+        </p>
+
+        <h4 class="h6 mt-4">Préparation et support postes</h4>
+        <ul class="mission-list">
+          <li>Préparation et déploiement de postes informatiques</li>
+          <li>Installation et configuration de Windows</li>
+          <li>Mise à jour des pilotes</li>
+          <li>Installation de logiciels professionnels</li>
+          <li>Configuration des comptes utilisateurs</li>
+          <li>Paramétrage Outlook</li>
+          <li>Transfert de données lors de migrations de postes</li>
+          <li>Récupération encadrée de mots de passe enregistrés dans les navigateurs, dans le cadre du support utilisateur</li>
+        </ul>
+
+        <h4 class="h6 mt-4">Support client et interventions</h4>
+        <ul class="mission-list">
+          <li>Traitement de tickets clients</li>
+          <li>Dépannage matériel et logiciel en atelier</li>
+          <li>Interventions chez les clients</li>
+          <li>Installation physique de matériel</li>
+          <li>Tests de connectivité et validation du bon fonctionnement</li>
+        </ul>
+
+        <h4 class="h6 mt-4">Réseau, sécurité et VPN</h4>
+        <ul class="mission-list">
+          <li>Configuration de profils VPN via Sophos Central</li>
+          <li>Configuration réseau et sécurité</li>
+          <li>Configuration d’un pare-feu</li>
+          <li>Paramétrage des interfaces LAN/WAN</li>
+          <li>Mise en place de règles de sécurité</li>
+          <li>Mise en place d’un VPN site à site</li>
+        </ul>
+
+        <div class="tag-list">
+          <span class="tag">Support utilisateur</span>
+          <span class="tag">Ticketing</span>
+          <span class="tag">Sophos Central</span>
+          <span class="tag">VPN</span>
+          <span class="tag">Pare-feu</span>
+          <span class="tag">LAN / WAN</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Ce que ces stages m’ont apporté</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
+        <article class="card-clean">
+          <h3 class="h5">Mise en pratique SISR</h3>
+          <p>J’ai appliqué mes compétences SISR en situation réelle sur des infrastructures Windows, réseau et sécurité.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="card-clean">
+          <h3 class="h5">Méthode de diagnostic</h3>
+          <p>J’ai progressé dans l’analyse d’incidents, les tests de connectivité et la recherche de causes techniques.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="card-clean">
+          <h3 class="h5">Support utilisateur</h3>
+          <p>J’ai mieux compris l’importance de l’écoute, de la pédagogie et du suivi dans le support informatique.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="card-clean">
+          <h3 class="h5">Déploiement et sécurité</h3>
+          <p>J’ai travaillé sur le déploiement de postes, les GPO, les VPN, les pare-feu et la sécurisation des accès.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <article class="card-clean">
+          <h3 class="h5">Autonomie professionnelle</h3>
+          <p>Ces stages m’ont aidé à gagner en autonomie, en rigueur et en professionnalisme face à des demandes concrètes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    &copy; 2026 - Portfolio BTS SIO option SISR | Adam LAJNEF - Tous droits réservés
+  </div>
+</footer>
+
+</body>
+</html>
