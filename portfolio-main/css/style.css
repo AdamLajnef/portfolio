@@ -705,6 +705,10 @@ section {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.cert-five-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .cert-criteria-card {
   padding: 22px;
 }
@@ -783,6 +787,12 @@ section {
   color: #a4f1d1;
 }
 
+.cert-status-finished {
+  background: rgba(123, 220, 181, 0.15);
+  border: 1px solid rgba(123, 220, 181, 0.4);
+  color: #a4f1d1;
+}
+
 .cert-status-progress {
   background: rgba(255, 177, 71, 0.13);
   border: 1px solid rgba(255, 177, 71, 0.4);
@@ -834,6 +844,10 @@ section {
 
 .cert-process-grid {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.cert-six-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .cert-process-grid article {
@@ -904,6 +918,38 @@ section {
   color: var(--text);
   font-weight: 800;
   padding: 7px 12px;
+}
+
+.cert-offer-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 24px;
+}
+
+.cert-offer-grid article {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-width: 0;
+  padding: 18px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.cert-offer-grid article:hover {
+  border-color: rgba(54, 163, 255, 0.55);
+  transform: translateY(-2px);
+}
+
+.cert-offer-grid strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cert-offer-grid p {
+  color: var(--muted);
+  margin-bottom: 0;
 }
 
 .cert-practice-link {
@@ -1816,10 +1862,10 @@ section {
   .container-xxl {
     margin-left: auto;
     margin-right: auto;
-    max-width: calc(100vw - 24px) !important;
+    max-width: calc(100% - 24px) !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    width: calc(100vw - 24px) !important;
+    width: calc(100% - 24px) !important;
   }
 
   .container .container {
@@ -1953,8 +1999,8 @@ section {
   .certifications-page main > section > .container {
     margin-left: 12px !important;
     margin-right: 12px !important;
-    max-width: calc(100vw - 24px) !important;
-    width: calc(100vw - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    width: calc(100% - 24px) !important;
   }
 
   .cert-hero-card,
@@ -1983,7 +2029,8 @@ section {
   .cert-grid,
   .cert-criteria-grid,
   .cert-process-grid,
-  .cert-two-columns {
+  .cert-two-columns,
+  .cert-offer-grid {
     grid-template-columns: 1fr !important;
   }
 
@@ -2004,7 +2051,8 @@ section {
 
   .cert-card h3,
   .cert-criteria-card h3,
-  .cert-process-grid h3 {
+  .cert-process-grid h3,
+  .cert-offer-grid strong {
     max-width: 25ch;
   }
 
@@ -2087,6 +2135,10 @@ section {
   .cert-grid,
   .cert-two-columns {
     grid-template-columns: 1fr;
+  }
+
+  .cert-five-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .cert-process-grid {
